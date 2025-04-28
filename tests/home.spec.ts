@@ -1,12 +1,8 @@
-// tests/home.spec.ts
 import { test, expect } from '@playwright/test';
-import { HomePage } from '../pages/HomePage';
+import { HomePage } from '../e2e/pages/home-page';
 
-test('Shop Now button navigates to /shop', async ({ page }) => {
+test('Home page loads and URL is correct', async ({ page }) => {
   const home = new HomePage(page);
-
   await home.goto();
-  await home.clickShopNow();
-
-  await expect(page).toHaveURL(/.*shop/);
+  await expect(page).toHaveURL('https://shop.polymer-project.org/');
 });

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { HomePage } from '../e2e/pages/home-page';
-import { ShopPage } from '../e2e/pages/shop-page';
+import { HomePage } from '../pages/home-page';
+import { ShopPage } from '../pages/shop-page';
 
 test('Click on "Men\'s Outerwear Shop Now" and verify category page', async ({ page }) => {
   const home = new HomePage(page);

@@ -27,4 +27,3 @@ export class ShopPage {
     await this.page.getByRole('link', { name: 'View Cart' }).click();
   }
 }
-

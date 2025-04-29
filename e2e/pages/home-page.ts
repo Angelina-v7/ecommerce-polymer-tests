@@ -7,4 +7,3 @@ export class HomePage {
     await this.page.goto('https://shop.polymer-project.org/');
   }
 }
-

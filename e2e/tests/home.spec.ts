@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { HomePage } from '../e2e/pages/home-page';
+import { HomePage } from '../pages/home-page';
 
 test('Home page loads and URL is correct', async ({ page }) => {
   const home = new HomePage(page);
